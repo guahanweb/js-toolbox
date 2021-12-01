@@ -1,0 +1,44 @@
+{
+    "name": "@guahanweb/{{dashCase name}}",
+    "description": "{{titleCase name}}",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "version": "0.0.1",
+    "main": "index.js",
+    "sideEffects": false,
+    "scripts": {
+        "analyze-bundle-size": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --profile",
+        "build": "jstools build",
+        "lint": "jstools lint",
+        "test": "jstools test"
+    },
+    "peerDependencies": {
+        "react": "~16.9.0 || ~16.11.0 || ~16.13.1 || ~17.0.2",
+        "react-dom": "~16.9.0 || ~16.11.0 || 16.13.1 || ~17.0.2"
+    },
+    "devDependencies": {
+        "@guahanweb/js-configs": "*",
+        "@types/copy-webpack-plugin": "^8.0.1",
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.11",
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "@types/webpack": "^5.28.0",
+        "@types/webpack-bundle-analyzer": "^4.4.1",
+        "@types/webpack-dev-server": "^4.5.0",
+        "copy-webpack-plugin": "^10.0.0",
+        "cross-env": "7.0.3",
+        "npm-run-all": "^4.1.5",
+        "react": "~17.0.2",
+        "react-dom": "~17.0.2",
+        "tsconfig-paths": "^3.12.0",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2",
+        "webpack": "^5.64.4",
+        "webpack-bundle-analyzer": "^4.5.0",
+        "webpack-dev-server": "^4.6.0"
+    }
+}

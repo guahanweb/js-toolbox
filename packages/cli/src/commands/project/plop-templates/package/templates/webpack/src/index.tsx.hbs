@@ -1,0 +1,17 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+type Props = { name: string };
+
+const HelloMessage = (props: Props) => {
+    return (
+        <h1>
+            Hello, {props.name}
+        </h1>
+    );
+};
+
+ReactDOM.render(
+    <HelloMessage name="World" />,
+    document.getElementById('app')
+);

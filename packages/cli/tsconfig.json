@@ -1,0 +1,4 @@
+{
+    "extends": "@guahanweb/js-configs/src/tsconfig.shared.json",
+    "include": ["src"]
+}
